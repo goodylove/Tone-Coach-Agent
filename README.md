@@ -23,7 +23,7 @@ When a user sends a message to the **Tone Coach** agent on **Telex.im**, the AI 
 **Example:**
 
 > **User Message:**
-> “I already told you to fix that yesterday.”
+> “/check I already told you to fix that yesterday.”
 >
 > **Tone:** Confrontational
 > **Feedback:** The message sounds accusatory and may make the receiver defensive.
@@ -124,7 +124,44 @@ When a user sends a message to the **Tone Coach** agent on **Telex.im**, the AI 
    }
    ```
 
-4. **View Agent Logs:**
+-----
+
+```markdown
+## 🚀 Usage
+
+To use the Tone Coach, simply call it in any Telex.im channel using the `/check` command followed by the message you want to analyze. The agent will respond privately.
+
+### Example
+
+**You send a message to the bot (in a DM or by mentioning it):**
+```
+
+/check Why wasn't this finished yesterday?
+
+```
+
+**The agent will reply to you privately with its analysis:**
+```
+
+Tone: Accusatory
+
+Feedback: This question can sound demanding and puts the recipient on the defensive, as it implies they failed to do something.
+
+Suggestions:
+
+  * "I saw this task wasn't completed. Is everything okay? Let me know if you ran into any blockers."
+  * "What's the current status of this task? I was expecting it to be done yesterday, so I just want to check in."
+
+<!-- end list -->
+
+```
+```
+
+-----
+
+
+
+5. **View Agent Logs:**
 
    ```
    https://api.telex.im/agent-logs/{your-channel-id}.txt
